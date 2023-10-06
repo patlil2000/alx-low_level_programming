@@ -11,7 +11,8 @@ int main(void)
 
 	for (c = 0; c < 10; c++)
 	{
-		printf("%d\n", c);
+		printf("%d", c);
 	}
+	putchar('\n');
 	return (0);
 }
