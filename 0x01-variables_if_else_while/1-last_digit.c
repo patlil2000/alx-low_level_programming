@@ -25,4 +25,5 @@ int main(void)
 	{
 		printf("Last digit of %d is greater than 5\n", n);
 	}
+	return (0);
 }
