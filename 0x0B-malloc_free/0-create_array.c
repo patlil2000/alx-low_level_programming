@@ -5,7 +5,7 @@
  *and initializes it with a specific char.
  *@size: size of the array
  *@c: a specific character
- *
+ *Return: returns a pointer
  */
 char *create_array(unsigned int size, char c)
 {
@@ -18,6 +18,10 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 	ptr = malloc(size * sizeof(char));
+	if (ptr == NULL)
+	{
+		return (NULL);
+	}
 	for (i = 0; i < size; i++)
 	{
 		ptr[i] = c;
