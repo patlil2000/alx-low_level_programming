@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- *
- *
+ *_strdup - pointer to a newly allocated space in memory
+ *@str: pointer to a string
+ *Return: returns a pointer to the duplicated string
  */
 char *_strdup(char *str)
 {
@@ -31,5 +32,4 @@ char *_strdup(char *str)
 	}
 	ptr[j + 1] = '\0';
 	return (ptr);
-	
 }
